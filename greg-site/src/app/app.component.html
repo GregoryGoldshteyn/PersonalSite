@@ -4,14 +4,11 @@
     <span>Hey there weary internet traveler, it's me, Greg.</span>
   </mat-toolbar-row>
 </mat-toolbar>
-  <nav mat-tab-nav-bar color="primary">
-    <a mat-tab-link
-       *ngFor="let link of navLinks"
-       [routerLink]="[link.path]"
-       routerLinkActive #rla="routerLinkActive"
-       [routerLinkActiveOptions]="{exact: true}"
-       [active]="rla.isActive">
-      {{link.label}}
-    </a>
-  </nav>
-<router-outlet></router-outlet>
+<mat-tab-group color="primary">
+  <mat-tab label="Home">
+    <app-home></app-home>
+  </mat-tab>
+  <mat-tab label="About">
+    <app-about></app-about>
+  </mat-tab>
+</mat-tab-group>
