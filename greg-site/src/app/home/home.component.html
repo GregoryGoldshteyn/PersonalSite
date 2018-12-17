@@ -1,20 +1,22 @@
-<h1>Notable Events, Weather, and Sports</h1>
-<mat-card>
-	<mat-card-title>
-		Advent of Code
-	</mat-card-title>
-	<mat-card-subtitle>
-		Part 1 - End of Day 4
-	</mat-card-subtitle>
-	<mat-card-content>
-		<p>This is the first year I'm participating in Eric Wastl's Advent of Code</p>
-		<a href="https://adventofcode.com/">https://adventofcode.com/</a>
-		<p>Each day in December, two new puzzles are unlocked for users to solve. These puzzles involve taking some large list of inputs, and generating some output, based on a process described in the puzzle. As such, the puzzles can be solved programmatically using any language of the participant's choosing. For my solutions, I've been using Python thus far.</p>
-		<p>Here are some things I've learned to cut down on solve-time:</p>
-		<ul>
-			<li>Use boilerplates - The puzzles always involve taking in a list of inputs. Creating a snippet of code to load the file into memory and using it for all puzzles saves time.</li>
-			<li>Preformat the input - Just because you get the input in some format doesn't mean you have to waste time parsing strings in your program. For example, if you get a datetime in yyyy-MM-dd hh:mm format, do a quick find and replace and change and seperators to commas. From here, the file can be read in as a csv file, no string parsing required!</li>
-			<li>Choose meaningful names - Having a gaurd, g_d, g_big, ect. in your code will get confusing quickly. Even though naming a varaible something offhandedly might be fast for a moment, it'll cost you time trying to figure out what it means later</li>
-		</ul>
-	</mat-card-content>
-</mat-card>
+<div class="center_div">	
+	<h1>Notable Events, Weather, and Sports</h1>
+	<mat-card>
+		<mat-card-title>
+			Advent of Code
+		</mat-card-title>
+		<mat-card-subtitle>
+			Part 1 - End of Day 4
+		</mat-card-subtitle>
+		<mat-card-content>
+			<p>This is the first year I'm participating in Eric Wastl's Advent of Code</p>
+			<a href="https://adventofcode.com/">https://adventofcode.com/</a>
+			<p>Each day in December, two new puzzles are unlocked for users to solve. These puzzles involve taking some large list of inputs, and generating some output, based on a process described in the puzzle. As such, the puzzles can be solved programmatically using any language of the participant's choosing. For my solutions, I've been using Python thus far.</p>
+			<p>Here are some techniques I've learned to cut down on solve-time:</p>
+				<h4>Use boilerplates</h4>
+				<p>The puzzles always involve taking in a list of inputs. Creating a snippet of code to load the file into memory and using it for all puzzles saves time. For python, I've also found that a function to check if a key exists in a dictionary, then adding the key at 1 or incrementing it, is also helpful.</p>
+				<h4>Preformat the input</h4>
+				<p>Just because you get the input in some format doesn't mean you have to waste time parsing strings in your program. For example, if you get a datetime in yyyy-MM-dd hh:mm format, do a quick find and replace and change and seperators to commas. From here, the file can be read in as a csv file, no string parsing required!</p>
+				<h4>Choose meaningful names</h4><p>Having a gaurd, g_d, g_big, ect. in your code will get confusing quickly. Even though naming a variable something offhandedly might be fast for a moment, it'll cost you time trying to figure out what it means later</p>
+		</mat-card-content>
+	</mat-card>
+</div>
